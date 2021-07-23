@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Webform_SE140594.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="font-size:x-large; background-color: red" align="center">Welcome to MasterPage ChildPage and Wizard </div>
+        <asp:Menu ID="Menu1" runat="server">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Build a Pubs" Value="Build a Pubs" NavigateUrl="~/Build a Pubs.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="View Job" Value="View Job" NavigateUrl="~/View Job.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
